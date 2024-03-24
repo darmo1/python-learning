@@ -42,3 +42,6 @@ requests = '*' -> el asterisco dice que es la ultima version
 
 [requires]
 python_version = '3.11'
+
+import os
+api = os.environ.get('name_variable')

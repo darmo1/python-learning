@@ -1,0 +1,44 @@
+para intalar modulos es asi:
+
+##pip3 install module
+pip3 install rquests
+
+pip3 list -> Esto lo que hace es listar los paquetes instalados
+Semver -> Semantic versioning
+
+pip3 install 'request=2.18.*'   -> para actualizar una version especifica
+
+
+#Ambientes virtuales
+cada proyecto debe tener sus propias dependencias es como un package.json para para proyecto en JS
+
+COMO SE CREA?
+python3 -m venv env  -> Esto lo que hace es instalar un ambiente virtual nuevo
+en el explodor de archivos sera cambiada en el vscode, y aparecerá asi
+env > bin > include > lib > pyconfing.env
+
+
+para activar el ambiente virutal debemos escribir en la terminal
+para window -> env/bin/activate.bat
+
+para desactivar es deactivate
+
+el formarte de py es pep08
+
+
+pipenv --venv
+
+cuando instalamos con pipenv nos crea dos archivos pipfile y piplock
+pipfile es la estructura del paquetes
+[[source]]
+url= 'htps://pypi.org/simple' -> de donde saca los paquetes
+verify_ssl = true
+name = "pypi" 
+
+[package]
+requests = '*' -> el asterisco dice que es la ultima version
+
+[dev-package]
+
+[requires]
+python_version = '3.11'

@@ -1,0 +1,7 @@
+
+class Perro:
+    def __init__(self, Correa):
+        self.correa = Correa()
+
+
+# existe un itedir() importante
